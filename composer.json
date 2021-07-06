@@ -1,0 +1,38 @@
+{
+  "name": "faisalrehmanid/fr-oauth2",
+  "description": "This library provide OAuth2 implementation",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Faisal Rehman",
+      "email": "faisalrehmanid@hotmail.com"
+    }
+  ],
+  "keywords": [
+    "OAuth2",
+    "Authentication",
+    "Access Token",
+    "Refresh Token"
+  ],
+  "autoload": {
+    "psr-4": {
+      "FR\\OAuth2\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "tests/Bootstrap.php"
+    ],
+    "psr-4": {
+      "FRUnitTest\\OAuth2\\": "tests/src/unit"
+    }
+  },
+  "require": {
+	"php": ">=5.4.0",
+    "faisalrehmanid/fr-service-response": ">=1.0",
+    "faisalrehmanid/fr-db": ">=1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "8"
+  }
+}
